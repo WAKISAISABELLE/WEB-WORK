@@ -4,14 +4,13 @@
 // we define routing using methods of the Express app object that correspond to HTTP methods; 
 
 // for example,
- 
-//  app.get(), this is used to handle GET requests.
+  
+//app.get(), this is used to handle GET requests.
 
-//  app.post, i s used to handle POST requests.
+//app.post, i s used to handle POST requests.
 
-//  app.all(), is used to handle all HTTP methods.
-
-//  app.use(), is used to specify middleware as the callback function.
+//app.all(), is used to handle all HTTP methods.
+//app.use(), is used to specify middleware as the callback function.
 
 
 //A query string is a set of characters tacked onto the end of a URL.
