@@ -13,35 +13,35 @@ db.connect((err) => {
 });
 module.exports = db;
 
-// db.query('SELECT * FROM Users', (err,results) => {
-//     if(err) {
-//         throw err;
-//     }
-//     console.log(results);
-// });
-// db.query('INSERT INTO Users (name, email) VALUES ("?","?","?")',[], (err,results) => {
-//     if(err) {
-//         throw err;
-//     }
-//     console.log(results);
-// });
-// db.query('UPDATE Users SET name = "?" WHERE id = "?"',[], (err,results) => {
-//     if(err) {
-//         throw err;
-//     }
-//     console.log(results);
-// });
-// db.query('DELETE FROM Users WHERE id = "?"',[], (err,results) => {
-//     if(err) {
-//         throw err;
-//     }
-//     console.log(results);
-// });
+db.query('SELECT * FROM Users', (err,results) => {
+    if(err) {
+        throw err;
+    }
+    console.log(results);
+});
+db.query('INSERT INTO Users (name, email) VALUES ("?","?","?")',[], (err,results) => {
+    if(err) {
+        throw err;
+    }
+    console.log(results);
+});
+db.query('UPDATE Users SET name = "?" WHERE id = "?"',[], (err,results) => {
+    if(err) {
+        throw err;
+    }
+    console.log(results);
+});
+db.query('DELETE FROM Users WHERE id = "?"',[], (err,results) => {
+    if(err) {
+        throw err;
+    }
+    console.log(results);
+});
 
 
-// db.end((err) => {
-//     if(err) {
-//         throw err;
-//     }
-//     console.log('Connection ended');
-// });
+db.end((err) => {
+    if(err) {
+        throw err;
+    }
+    console.log('Connection ended');
+});
