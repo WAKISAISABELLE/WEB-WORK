@@ -34,22 +34,22 @@
 
 
 //ii. Demonstrating Routes for Different HTTP Methods:
-const express = require('express')
-const app = express()
+// const express = require('express')
+// const app = express()
 
 //get method route
 //the respond will be "hello world" when a GET request is made to the homepage
-const user=[
-  {name:'irene' , course:'data_science'}
-]
-app.get('/user', (req, res) => {
-  res.send(user)
-})
+// const user=[
+// //   {name:'irene' , course:'data_science'}
+// // ]
+// // app.get('/user', (req, res) => {
+// //   res.send(user)
+// // })
 
-app.listen(3004,()=>{
-  console.log(`the server is running on port 3004
-    `)
-})
+// // app.listen(3004,()=>{
+// //   console.log(`the server is running on port 3004
+// //     `)
+// // })
 
 
 // const irene=[{name:'priscilla', age: 43}
