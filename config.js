@@ -25,7 +25,7 @@ db.query('INSERT INTO Users (name, email, password ) VALUES ("?","?","?")',[], (
     }
     console.log(results);
 });
-db.query('UPDATE Users SET name = "?" , email = "?" password = "?"',[], (err,results) => {
+db.query('UPDATE Users SET name = "?", email = "?", password = "?"',[], (err,results) => {
     if(err) {
         throw err;
     }
