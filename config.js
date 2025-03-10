@@ -19,19 +19,19 @@ db.query('SELECT * FROM Users', (err,results) => {
     }
     console.log(results);
 });
-db.query('INSERT INTO Users (name, email) VALUES ("?","?","?")',[], (err,results) => {
+db.query('INSERT INTO Users (name, email, password ) VALUES ("?","?","?")',[], (err,results) => {
     if(err) {
         throw err;
     }
     console.log(results);
 });
-db.query('UPDATE Users SET name = "?" WHERE id = "?"',[], (err,results) => {
+db.query('UPDATE Users SET name = "?" , email = "?" password = "?"',[], (err,results) => {
     if(err) {
         throw err;
     }
     console.log(results);
 });
-db.query('DELETE FROM Users WHERE id = "?"',[], (err,results) => {
+db.query('DELETE FROM Users WHERE email = "?"',[], (err,results) => {
     if(err) {
         throw err;
     }
